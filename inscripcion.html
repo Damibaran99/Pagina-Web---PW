@@ -7,6 +7,7 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosInscripcion.css">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
+        <script type="text/javascript" src="js/inscripcion.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     </head>
@@ -52,18 +53,14 @@
             <h3 class="titulocurso"> Inscripción </h3>
             <section>
                 <form>
-                <div id="inscripcion">
-                <input type="text" class="primeraFila" placeholder="Nombre">
-                <input type="text" class="primeraFila" placeholder="Apellido">
-                <input type="text" class="primeraFila" placeholder="DNI"><span class="addOrDelete">-</span>
-                <input type="text" class="segundaFila" placeholder="Nombre">
-                <input type="text" class="segundaFila" placeholder="Apellido">
-                <input type="text" class="segundaFila" placeholder="DNI"><span class="addOrDelete">-</span>
-                <input type="text" class="terceraFila" placeholder="Nombre">
-                <input type="text" class="terceraFila" placeholder="Apellido">
-                <input type="text" class="terceraFila" placeholder="DNI"><span class="addOrDelete">-</span>
+                <div id ="contenedor">
+                    <div id="inscripcion">
+                        <input type="text" class="primeraFila" placeholder="Nombre">
+                        <input type="text" class="primeraFila" placeholder="Apellido">
+                        <input type="text" class="primeraFila" placeholder="DNI"><span id= "menos" onClick="eliminarPersona()" class="addOrDelete">-</span>
                     </div>
-                    <div id="botonAgregar"><span class="addOrDelete">+</span>Agregar persona</div>
+                </div>
+                    <div id="botonAgregar" onClick="agregarPersona()"><span class="addOrDelete">+</span>Agregar persona</div>
                 </form>
             </section>
         </section>
