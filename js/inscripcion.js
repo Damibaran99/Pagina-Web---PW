@@ -5,10 +5,12 @@ function agregarPersona(){
 }
 
 function eliminarPersona(){
-     var uno = document.getElementById("inscripcion");
+     var uno = document.getElementById("contenedor"). lastChild;
      var tamanio = document.getElementById("contenedor").childNodes.length;
      if (tamanio > 3){
      document.getElementById("contenedor").removeChild(uno);
 
      }
+
+
 }
