@@ -57,15 +57,15 @@
                     <div id="inscripcion">
                         <input type="text" class="primeraFila" placeholder="Nombre">
                         <input type="text" class="primeraFila" placeholder="Apellido">
-                        <input type="text" class="primeraFila" placeholder="DNI"><span id= "menos" onClick="eliminarPersona()" class="addOrDelete">-</span>
+                        <input type="text" class="primeraFila" placeholder="DNI"><input type="button" id= "menos" onClick="eliminarPersona()" value="-">
                     </div>
                 </div>
-                    <div id="botonAgregar" onClick="agregarPersona()"><span class="addOrDelete">+</span>Agregar persona</div>
+                    <input type="button" id="botonAgregar" onClick="agregarPersona();sumarPrecio();" value ="+"> Agregar persona
                 </form>
             </section>
         </section>
         <div id="abajo">
-        <h3 id="precio"> $... </h3>
+        <h3 id="precio"> $1890 </h3>
         <button id="boton">INSCRIBIRSE</button>
         </div>
         <br>
