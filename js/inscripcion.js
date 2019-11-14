@@ -18,6 +18,11 @@ function sumarPrecio(){
     document.getElementById("precio").innerText= "$" + a;
     }
 
+function restarPrecio(){
+    a = a - 1890;
+    document.getElementById("precio").innerText= "$" + a;
+    }
+
 function clear(){
     document.getElementsByClassName("primeraFila").innerText = " ";
 }
