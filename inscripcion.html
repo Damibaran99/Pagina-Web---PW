@@ -7,6 +7,7 @@
         <meta name="keywords" content="curso">
         <link rel="stylesheet" href="Css/EstilosInscripcion.css">
         <link rel="stylesheet" href="Css/EstilosPrincipal.css">
+        <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
         <script type="text/javascript" src="js/inscripcion.js"></script>
         <link rel="shortcut icon" type="image/x-icon" href="img/logo1.ico">
         <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
@@ -48,25 +49,38 @@
             </div>
         </nav>
 
+        <div id="myModal" class="modal">
+        <!-- Modal -->
+        <div class="modal-content">
+        <h1>Personas Inscriptas</h1>
+        <div id ="ingresar_per">
+
+        </div>
+
+        </div>
+        </div>
+
         <section>
             <h2 class="titulocurso"> Curso de HTML</h2> <br>
             <h3 class="titulocurso"> Inscripción </h3>
             <section>
-                <form>
+                <form id="form">
                 <div id ="contenedor">
-                    <div id="inscripcion">
+                    <div id="inscripcion" class="inscripcion">
                         <input type="text" class="primeraFila" placeholder="Nombre">
                         <input type="text" class="primeraFila" placeholder="Apellido">
-                        <input type="text" class="primeraFila" placeholder="DNI"><input type="button" id= "menos" onClick="eliminarPersona();restarPrecio();" value="-">
+                        <input type="text" class="primeraFila" placeholder="DNI">
+                        <img src="img/menos.png" id= "menos" onClick="eliminarPersona();restarPrecio();" class="addOrDelete">
                     </div>
-                </div>
-                    <input type="button" id="botonAgregar" onClick="agregarPersona();sumarPrecio();" value ="+"> Agregar persona
+                    </div>
                 </form>
+                 <input type="button" id="botonAgregar" onClick="agregarPersona();sumarPrecio();" value = "+" class="addOrDelete"> Agregar persona
             </section>
         </section>
         <div id="abajo">
         <h3 id="precio"> $1890 </h3>
-        <button id="boton">INSCRIBIRSE</button>
+            <span class="close"></span>
+            <button id="boton" onclick="llamarModal()"> INSCRIBIRSE </button>
         </div>
         <br>
         <footer>
