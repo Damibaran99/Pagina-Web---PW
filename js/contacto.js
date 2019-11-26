@@ -2,6 +2,8 @@
       var nombre = document.getElementById("nombre").value;
       var apellido = document.getElementById("apellido").value;
       var email = document.getElementById("email").value;
+//Para usar con jquery descomentar la línea de abajo
+//      var email = $("#email").val();
       var tel = document.getElementById("tel").value;
 //      var consulta = document.getSelection("consulta").value;
       var expresion = /^([a-zA-Z0-9_\.\-])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
@@ -41,4 +43,14 @@
 
       alert("Información enviada, nos contactaremos con usted a la brevedad");
       return true;
-  }
+
+      $(document).ready(function(){
+      $("#tel").on(function () {
+          var output;
+          var pre = input.substr(0, 3);
+          var tel = input.substr(4, 7);
+          output = pre + "-" + tel;
+          tel.val(output);
+          console.log(output);
+      });
+  });
