@@ -37,13 +37,13 @@ var span = document.getElementsByClassName("close")[0];
 // When the user clicks the button, open the modal
 btn.onclick = function() {
     var contenido = "";
-    var tags = ["Nombre", "Apellido", "Dni"];
+    var tags = ["Nombre", "Apellido", "DNI"];
     var i = 0;
     var cantPer = 1;
 
     $('.inscripcion').each(function(){
         contenido = contenido.concat("<ul>");
-        contenido = contenido.concat("<li>PERSONA "+cantPer+"</li>");
+        contenido = contenido.concat("<li>Inscripto Nº"+cantPer+"</li>");
 
        $(this).find("input").each(function(){
         contenido = contenido.concat("<li>");
