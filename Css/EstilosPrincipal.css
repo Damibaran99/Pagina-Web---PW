@@ -60,6 +60,11 @@ header .ladoi{
     justify-content: flex-start;
 }
 
+#contador{
+    font-size: 30;
+    margin-right: -620px;
+}
+
 #carrito {
     font-size: 28;
 }
